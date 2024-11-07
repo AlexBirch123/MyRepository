@@ -1,0 +1,116 @@
+###  ---------------- SUCURSALES -----------------------
+GET http://localhost:8080/allBranches HTTP/1.1
+
+###
+GET http://localhost:3000/allBranches/1 HTTP/1.1
+
+###
+POST http://localhost:8080/allBranches HTTP/1.1
+Content-Type: application/json
+
+{
+    "telefono": 341222333,
+    "direccion": "Rui Barbosa 1242"
+}
+
+###
+PUT http://localhost:8080/allBranches/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "telefono": 3412222333,
+    "direccion": "Dirreccn"
+}
+
+###
+DELETE http://localhost:8080/allBranches/4 HTTP/1.1
+
+
+
+###  ---------------- PRODUCTOS -----------------------
+GET http://localhost:3000/allProducto HTTP/1.1
+
+###
+GET http://localhost:3000/allProducto/2 HTTP/1.1
+
+###
+POST http://localhost:3000/allProducto HTTP/1.1
+Content-Type: application/json
+
+{
+    "descripcion": "Esmalte Distincion",
+    "precio": 15000,
+    "stock": 18
+}
+
+###
+PUT http://localhost:3000/allProducto/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "descripcion": "Esmalte Casablanca",
+    "precio": 15000,
+    "stock": 18
+}
+
+###
+DELETE http://localhost:3000/allProducto/3 HTTP/1.1
+
+
+
+###  ---------------- USUARIOS -----------------------
+GET http://localhost:8080/allUsers HTTP/1.1
+
+###
+GET http://localhost:3000/allUsuario/2 HTTP/1.1
+
+###
+POST http://localhost:8080/allUsers HTTP/1.1
+Content-Type: application/json
+
+{
+    "dni": 94984636 ,
+    "userName": "Alex123",
+    "pswHash": "123"
+}
+
+###
+PUT http://localhost:3000/allUsuario/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Luka123456",
+    "email": "luka@gmail.com",
+    "psw": "123"
+}
+
+###
+DELETE http://localhost:3000/allUsuario/3 HTTP/1.1
+
+
+###  ---------------- Clientes -----------------------
+GET http://localhost:8080/allClients HTTP/1.1
+
+###
+GET http://localhost:8080/allClients/2 HTTP/1.1
+
+###
+POST http://localhost:8080/allClients HTTP/1.1
+Content-Type: application/json
+
+{
+    "dni": 94984646 ,
+    "name": "Alex Birchmeyer"
+}
+
+###
+PATCH  http://localhost:8080/allClients/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Alex"
+
+}
+
+###
+DELETE http://localhost:3000/allUsuario/3 HTTP/1.1
